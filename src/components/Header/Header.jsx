@@ -16,8 +16,8 @@ function Header () {
     <>
       <SocialStyled>
         <SocialContainer>
-          <span>
-            Precisa de ajuda? Chame no WhatsApp <a>(37) 9.9995-5555</a>
+          <span className="whatsapp">
+            Precisa de ajuda? Chame no WhatsApp <a href="https://api.whatsapp.com/send?phone=5537999955555&text=Ol%C3%A1%20Fashion%20Fusion,%20preciso%20de%20ajuda">(37) 9.9995-5555</a>
           </span>
           <RightBar>
             <SocialMedias>
