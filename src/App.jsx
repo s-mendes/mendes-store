@@ -1,6 +1,7 @@
 import React from 'react';
 import { createGlobalStyle } from 'styled-components';
 import Router from './route/Router';
+import GlobalState from './contexts/GlobalState';
 
 const GlobalStyle = createGlobalStyle`
 
@@ -8,7 +9,7 @@ const GlobalStyle = createGlobalStyle`
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 body {  
   background-position: top center;
@@ -23,7 +24,9 @@ function App() {
   return (
     <>
       <GlobalStyle/>
-      <Router />
+      <GlobalState>
+        <Router />
+      </GlobalState>
     </>
   );
 }
