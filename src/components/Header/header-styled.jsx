@@ -64,6 +64,13 @@ export const SocialContainer = styled.div`
   padding: 6px 10px 9px;
   color: white;
   font-size: 0.9rem;
+  .whatsapp{
+    color: white;
+    a {
+      text-decoration: underline;
+      color: white;
+    }
+  }
   `;
 
 export const RightBar = styled.div`
@@ -80,8 +87,20 @@ export const RightBar = styled.div`
 export const SocialMedias = styled.div `
   display: flex;
   gap: 8px;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   border-right: 1px solid #52eaf3;
   padding-right: 16px;
+  & svg:first-child {
+  font-size: 15px;
+  }
+  & svg:nth-child(2) {
+    font-size: 16px;
+  }
+  & svg:nth-child(3) {
+    font-size: 15px;
+  }
+  & svg:nth-child(4) {
+    font-size: 18px;
+  }
 `;
