@@ -7,6 +7,8 @@ import { CgProfile } from 'react-icons/cg';
 import { BsInstagram, BsTwitter, BsFacebook, BsYoutube } from 'react-icons/bs';
 import { useNavigate } from 'react-router-dom';
 import { goHome, goToLogin, goToSignUp } from '../../route/coordinator';
+import HeaderMenu from '../HeaderMenu/HeaderMenu';
+import MenuDrop from '../MenuDrop/MenuDrop';
 
 function Header () {
 
@@ -56,6 +58,8 @@ function Header () {
           <CartButton />
         </Container>
       </HeaderStyled>
+      <HeaderMenu />
+      <MenuDrop />
     </>
   );
 }
