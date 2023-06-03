@@ -1,5 +1,5 @@
-import React from 'react';
-import { HeaderStyled, Container, Logo, Login, SocialStyled, SocialContainer, SocialMedias, RightBar } from './header-styled';
+import React, { useContext } from 'react';
+import { HeaderStyled, Container, Logo, Login, SocialStyled, SocialContainer, SocialMedias, RightBar, MainContainer } from './header-styled';
 import SearchBar from '../SearchBar/SearchBar';
 import CartButton from '../CartButton/CartButton';
 import logo from './logo.svg';
@@ -8,14 +8,18 @@ import { BsInstagram, BsTwitter, BsFacebook, BsYoutube } from 'react-icons/bs';
 import { useNavigate } from 'react-router-dom';
 import { goHome, goToLogin, goToSignUp } from '../../route/coordinator';
 import HeaderMenu from '../HeaderMenu/HeaderMenu';
-import MenuDrop from '../MenuDrop/MenuDrop';
+import MenuMobile from '../MenuMobile/MenuMobile';
+import GlobalContext from '../../contexts/GlobalContext';
+import { MdMenu } from 'react-icons/md';
+
 
 function Header () {
 
   const navigate = useNavigate();
+  const { setMenuMobileIsVisible } = useContext(GlobalContext);
 
   return (
-    <>
+    <MainContainer>
       <SocialStyled>
         <SocialContainer>
           <span className="whatsapp">
@@ -55,12 +59,16 @@ function Header () {
               </p>
             </div>
           </Login>
-          <CartButton />
+          <div className="mobile">
+            <CartButton className="cart"/>
+            <MdMenu onClick={() => setMenuMobileIsVisible(true)} className="mobile-menu"/>
+          </div>
+          <MenuMobile />
         </Container>
       </HeaderStyled>
       <HeaderMenu />
-      <MenuDrop />
-    </>
+      
+    </MainContainer>
   );
 }
 

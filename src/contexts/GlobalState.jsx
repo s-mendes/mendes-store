@@ -7,6 +7,8 @@ function GlobalState(props) {
   const [ load, setLoad ] = useState(true);
   const [ search, setSearch ] = useState('');
   const [cart, setCart] = useState([]);
+  const [ menuIsVisible, setMenuIsVisible ] = useState(false);
+  const [ menuMobileIsVisible, setMenuMobileIsVisible ] = useState(false);
   
   async function getAllProducts() {
     try {
@@ -30,7 +32,11 @@ function GlobalState(props) {
     search,
     setSearch,
     cart,
-    setCart
+    setCart,
+    menuIsVisible,
+    setMenuIsVisible,
+    menuMobileIsVisible,
+    setMenuMobileIsVisible
   };
   return ( 
     <>
