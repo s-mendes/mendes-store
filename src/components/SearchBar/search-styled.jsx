@@ -35,4 +35,7 @@ export const Form = styled.form`
   button:hover{
     cursor: pointer;
   }
+  @media screen and (max-width: 1130px) {
+    max-width: 100%;
+  }
 `;

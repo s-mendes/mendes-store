@@ -3,6 +3,11 @@ import styled from 'styled-components';
 export const MainContainer = styled.nav`
   background-color: #fff;
   height: 40px;
+  z-index: 5;
+  @media screen and (max-width: 1130px) {
+      display: none;
+      pointer-events: none;
+    }
 `;
 
 export const MenuContainer = styled.ul`
@@ -73,4 +78,29 @@ export const Categories = styled.li`
       transition: all 0.3s
        }
     }
+`;
+
+export const DropdownMenu = styled.div`
+  position: absolute;
+  z-index: -1;
+  background-color: #fff;
+  /* color: #757575; */
+  border-top: 1px solid #e9eae9;
+  width: 100%;
+  opacity: 0;
+  transform: translateY(-200px);
+  -webkit-transition: all 0.3s ;
+  -o-transition: all 0.3s ;
+  -ms-transition: all 0.3s ;
+  -moz-transition: all 0.3s ;
+  transition: all 0.3s;
+  &>div {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 10px;
+  }
+  ${ ({ menuIsVisible }) =>  menuIsVisible && `
+        opacity: 1;
+        transform: translateY(0px);
+    `}
 `;
