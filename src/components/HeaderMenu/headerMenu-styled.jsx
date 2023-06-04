@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const MainContainer = styled.nav`
   background-color: #fff;
+  position: relative;
   height: 40px;
   z-index: 5;
   @media screen and (max-width: 1130px) {
@@ -82,7 +83,7 @@ export const Categories = styled.li`
 
 export const DropdownMenu = styled.div`
   position: absolute;
-  z-index: -1;
+  z-index: 2;
   background-color: #fff;
   /* color: #757575; */
   border-top: 1px solid #e9eae9;

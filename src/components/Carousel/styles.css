@@ -1,0 +1,99 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.swiper img {
+  max-height: 350px;
+}
+
+@media screen and (max-width: 700px) {
+  .swiper {
+  height: 35vh;
+  }
+  
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-pagination-bullet {
+  /* Estilize as balas da paginação */
+  width: 8px;
+  height: 8px;
+  background-color: #00acb7; /* Cor vermelha como exemplo */
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+
+.swiper-pagination-bullet-active {
+  /* Estilize a bala ativa da paginação */
+  opacity: 1;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  /* Estilize as setas de navegação */
+  position: absolute;
+  top: 50%;
+  transform: translateY(0%);
+  width: 40px;
+  height: 40px;
+  background-color: white; /* Cor vermelha como exemplo */
+  border-radius: 30px;
+  opacity: 0.5;
+  z-index: 10;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  /* Estilize o ícone da seta */
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #00acb7;
+  border-right: 2px solid #00acb7;
+  transform: translate(-65%, -50%) rotate(45deg);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: transform 0.2s;
+}
+
+.swiper-button-prev::after {
+  transform: translate(-35%, -50%) rotate(225deg);
+}
+.swiper-button-prev {
+  left: 10px;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  opacity: 1;
+}
+
+.swiper-button-next:hover::after {
+  transform: translate(-65%, -50%) rotate(45deg) scale(1.2);
+}
+
+.swiper-button-prev:hover::after {
+  transform: translate(-35%, -50%) rotate(225deg) scale(1.2);
+}

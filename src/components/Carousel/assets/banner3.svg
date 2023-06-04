@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_2" data-name="Camada 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 394.67 137.11">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: JosefinSans-Bold, 'Josefin Sans';
+        font-size: 17px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #18283f;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        stroke: #18283f;
+        stroke-width: 5px;
+      }
+
+      .cls-3, .cls-4 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3, .cls-4, .cls-5 {
+        fill: none;
+      }
+
+      .cls-6 {
+        fill: url(#Motivo_nuevo_4);
+      }
+
+      .cls-7 {
+        letter-spacing: 0em;
+      }
+
+      .cls-8 {
+        font-size: 11px;
+      }
+
+      .cls-8, .cls-9 {
+        fill: #fff;
+        font-family: AbrilFatface-Regular, 'Abril Fatface';
+      }
+
+      .cls-10 {
+        letter-spacing: .04em;
+      }
+
+      .cls-4 {
+        stroke: #fff;
+        stroke-width: 2px;
+      }
+
+      .cls-9 {
+        font-size: 27px;
+      }
+
+      .cls-11 {
+        fill: #fafcfb;
+      }
+
+      .cls-12 {
+        letter-spacing: -.07em;
+      }
+
+      .cls-13 {
+        letter-spacing: -.06em;
+      }
+
+      .cls-14 {
+        letter-spacing: .05em;
+      }
+
+      .cls-15 {
+        fill: url(#Degradado_sin_nombre_112);
+      }
+
+      .cls-16 {
+        letter-spacing: .02em;
+      }
+
+      .cls-2 {
+        font-family: JosefinSans-BoldItalic, 'Josefin Sans';
+        font-size: 12.46px;
+        font-style: italic;
+      }
+
+      .cls-17 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-18 {
+        fill: #f4d4d7;
+      }
+    </style>
+    <radialGradient id="Degradado_sin_nombre_112" data-name="Degradado sin nombre 112" cx="280" cy="66.56" fx="280" fy="66.56" r="212.67" gradientUnits="userSpaceOnUse">
+      <stop offset=".08" stop-color="#b3c9d7"/>
+      <stop offset="1" stop-color="#87adc1"/>
+    </radialGradient>
+    <pattern id="Motivo_nuevo_4" data-name="Motivo nuevo 4" x="0" y="0" width="29" height="29" patternTransform="translate(-99.67 -192.67)" patternUnits="userSpaceOnUse" viewBox="0 0 29 29">
+      <g>
+        <rect class="cls-5" width="29" height="29"/>
+        <g>
+          <line class="cls-4" x1="58" y1="29" x2="29" y2="58"/>
+          <line class="cls-4" x1="53.38" y1="24.38" x2="24.38" y2="53.37"/>
+          <line class="cls-4" x1="48.75" y1="19.75" x2="19.75" y2="48.75"/>
+        </g>
+        <g>
+          <line class="cls-4" x1="29" y1="29" y2="58"/>
+          <line class="cls-4" x1="24.38" y1="24.38" x2="-4.62" y2="53.37"/>
+          <line class="cls-4" x1="19.75" y1="19.75" x2="-9.25" y2="48.75"/>
+        </g>
+        <line class="cls-4" y1="29" x2="-29" y2="58"/>
+        <g>
+          <line class="cls-4" x1="58" x2="29" y2="29"/>
+          <line class="cls-4" x1="53.38" y1="-4.62" x2="24.38" y2="24.38"/>
+          <line class="cls-4" x1="48.75" y1="-9.25" x2="19.75" y2="19.75"/>
+        </g>
+        <g>
+          <line class="cls-4" x1="29" y2="29"/>
+          <line class="cls-4" x1="24.38" y1="-4.62" x2="-4.62" y2="24.38"/>
+          <line class="cls-4" x1="19.75" y1="-9.25" x2="-9.25" y2="19.75"/>
+        </g>
+        <line class="cls-4" x2="-29" y2="29"/>
+        <line class="cls-4" x1="58" y1="-29" x2="29"/>
+        <line class="cls-4" x1="29" y1="-29"/>
+        <line class="cls-4" y1="-29" x2="-29"/>
+      </g>
+    </pattern>
+  </defs>
+  <g id="OBJECTS">
+    <g>
+      <rect class="cls-15" width="394.67" height="137.11"/>
+      <rect class="cls-18" x="31.33" width="24.33" height="81.28"/>
+      <rect class="cls-18" x="213.33" y="68.56" width="138.5" height="38.56"/>
+      <rect class="cls-6" x="229.83" width="97.5" height="137.11"/>
+      <rect class="cls-3" x="14.08" y="14.08" width="366.5" height="108.95"/>
+      <rect class="cls-6" y="62.33" width="45.33" height="74.78"/>
+      <rect class="cls-6" x="322.33" y="93.33" width="72.33" height="43.78"/>
+      <g>
+        <g>
+          <text class="cls-1" transform="translate(65.75 56.06)"><tspan x="0" y="0">MEGA </tspan><tspan class="cls-12" x="57.75" y="0">F</tspan><tspan x="66.76" y="0">ASHION</tspan></text>
+          <text class="cls-9" transform="translate(100.82 79.28)"><tspan class="cls-17" x="0" y="0">S</tspan><tspan class="cls-7" x="15.12" y="0">ALE</tspan></text>
+          <text class="cls-8" transform="translate(92.5 36.28)"><tspan class="cls-14" x="0" y="0">U</tspan><tspan class="cls-10" x="8.06" y="0">P</tspan><tspan class="cls-16" x="15.48" y="0">T</tspan><tspan class="cls-14" x="23.21" y="0">O 20% OFF</tspan></text>
+        </g>
+        <g>
+          <rect class="cls-11" x="66.8" y="90.53" width="134.83" height="18.39"/>
+          <text class="cls-2" transform="translate(97.65 104.04)"><tspan x="0" y="0">SHOP N</tspan><tspan class="cls-13" x="50.08" y="0">O</tspan><tspan x="59.95" y="0">W</tspan></text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
