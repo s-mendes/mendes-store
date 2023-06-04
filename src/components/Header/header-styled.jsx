@@ -5,10 +5,10 @@ export const MainContainer = styled.header `
 `;
 
 export const HeaderStyled = styled.div `
+  position: relative;
   background-color: #00acb7;
-  /* position: fixed; */
   width: 100%;
-  z-index: 1;
+  z-index: 5;
 `;
 
 export const Logo = styled.img `
@@ -78,9 +78,9 @@ export const Login = styled.div `
 
 export const SocialStyled = styled.div `
   background-color: #00A3AD;
-  /* position: fixed; */
+  position: relative;
   width: 100%;
-  z-index: 1;
+  z-index: 5;
 `;
 
 export const SocialContainer = styled.div`

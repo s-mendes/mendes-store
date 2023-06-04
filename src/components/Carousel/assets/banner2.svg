@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_2" data-name="Camada 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 394.67 137.11">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: .03em;
+      }
+
+      .cls-2 {
+        letter-spacing: .02em;
+      }
+
+      .cls-3 {
+        fill: url(#Degradado_sin_nombre_115);
+      }
+
+      .cls-4 {
+        fill: url(#Motivo_nuevo_4);
+      }
+
+      .cls-5 {
+        font-size: 11px;
+      }
+
+      .cls-5, .cls-6 {
+        font-family: AbrilFatface-Regular, 'Abril Fatface';
+      }
+
+      .cls-5, .cls-7 {
+        fill: #fff;
+      }
+
+      .cls-6, .cls-8 {
+        fill: #472e31;
+      }
+
+      .cls-6, .cls-7 {
+        font-size: 27px;
+      }
+
+      .cls-9 {
+        stroke: #fff;
+        stroke-width: 2px;
+      }
+
+      .cls-9, .cls-10, .cls-11 {
+        fill: none;
+      }
+
+      .cls-9, .cls-11 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-12 {
+        letter-spacing: -.1em;
+      }
+
+      .cls-13 {
+        letter-spacing: .05em;
+      }
+
+      .cls-14 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-7 {
+        font-family: JosefinSans-BoldItalic, 'Josefin Sans';
+        font-style: italic;
+        font-weight: 700;
+      }
+
+      .cls-11 {
+        stroke: #472e31;
+        stroke-width: 5px;
+      }
+
+      .cls-15 {
+        fill: url(#Motivo_nuevo_4-2);
+      }
+
+      .cls-16 {
+        fill: #b3e0cc;
+      }
+    </style>
+    <radialGradient id="Degradado_sin_nombre_115" data-name="Degradado sin nombre 115" cx="131.33" cy="68.56" fx="131.33" fy="68.56" r="226.04" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f4c486"/>
+      <stop offset="1" stop-color="#c4843d"/>
+    </radialGradient>
+    <pattern id="Motivo_nuevo_4" data-name="Motivo nuevo 4" x="0" y="0" width="29" height="29" patternTransform="translate(-99.67 -339.11)" patternUnits="userSpaceOnUse" viewBox="0 0 29 29">
+      <g>
+        <rect class="cls-10" width="29" height="29"/>
+        <g>
+          <line class="cls-9" x1="58" y1="29" x2="29" y2="58"/>
+          <line class="cls-9" x1="53.38" y1="24.38" x2="24.38" y2="53.37"/>
+          <line class="cls-9" x1="48.75" y1="19.75" x2="19.75" y2="48.75"/>
+        </g>
+        <g>
+          <line class="cls-9" x1="29" y1="29" y2="58"/>
+          <line class="cls-9" x1="24.38" y1="24.38" x2="-4.62" y2="53.37"/>
+          <line class="cls-9" x1="19.75" y1="19.75" x2="-9.25" y2="48.75"/>
+        </g>
+        <line class="cls-9" y1="29" x2="-29" y2="58"/>
+        <g>
+          <line class="cls-9" x1="58" x2="29" y2="29"/>
+          <line class="cls-9" x1="53.38" y1="-4.62" x2="24.38" y2="24.38"/>
+          <line class="cls-9" x1="48.75" y1="-9.25" x2="19.75" y2="19.75"/>
+        </g>
+        <g>
+          <line class="cls-9" x1="29" y2="29"/>
+          <line class="cls-9" x1="24.38" y1="-4.62" x2="-4.62" y2="24.38"/>
+          <line class="cls-9" x1="19.75" y1="-9.25" x2="-9.25" y2="19.75"/>
+        </g>
+        <line class="cls-9" x2="-29" y2="29"/>
+        <line class="cls-9" x1="58" y1="-29" x2="29"/>
+        <line class="cls-9" x1="29" y1="-29"/>
+        <line class="cls-9" y1="-29" x2="-29"/>
+      </g>
+    </pattern>
+    <pattern id="Motivo_nuevo_4-2" data-name="Motivo nuevo 4" patternTransform="translate(-110 -339.11)" xlink:href="#Motivo_nuevo_4"/>
+  </defs>
+  <g id="OBJECTS">
+    <g>
+      <rect class="cls-3" width="394.67" height="137.11"/>
+      <rect class="cls-4" y="81.83" width="23.93" height="55.05"/>
+      <rect class="cls-16" x="197.97" width="88" height="28.47"/>
+      <rect class="cls-16" x="338.67" y="42.45" width="31.67" height="94.67"/>
+      <rect class="cls-11" x="14.08" y="14.08" width="366.5" height="108.95"/>
+      <rect class="cls-15" x="45.33" width="47.85" height="93.39"/>
+      <rect class="cls-4" x="351.83" width="37.5" height="93.39"/>
+      <g>
+        <g>
+          <text class="cls-6" transform="translate(197.38 61.58)"><tspan class="cls-12" x="0" y="0">F</tspan><tspan class="cls-14" x="13.28" y="0">A</tspan><tspan x="31.75" y="0">SHION</tspan></text>
+          <text class="cls-7" transform="translate(220.47 85.53)"><tspan x="0" y="0">SALE</tspan></text>
+        </g>
+        <g>
+          <rect class="cls-8" x="197.33" y="89.61" width="116.15" height="16.81"/>
+          <text class="cls-5" transform="translate(206.73 102.01)"><tspan class="cls-13" x="0" y="0">SP</tspan><tspan class="cls-2" x="14.67" y="0">E</tspan><tspan class="cls-13" x="21.81" y="0">CIAL OFFE</tspan><tspan class="cls-1" x="82.54" y="0">R</tspan><tspan class="cls-13" x="90.75" y="0">S</tspan></text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
