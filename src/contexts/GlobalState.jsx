@@ -10,10 +10,10 @@ function GlobalState(props) {
   const [ menuIsVisible, setMenuIsVisible ] = useState(false);
   const [ menuMobileIsVisible, setMenuMobileIsVisible ] = useState(false);
   
-  async function getAllProducts() {
+  async function getAllProducts(search) {
     try {
       setLoad(true);
-      const products = await fetchItems(search === '' ? 'astronauta' : search);
+      const products = await fetchItems(search ? search : 'astronauta');
       const result = await Promise.all(products);
       setProducts(result);
       setLoad(false);
@@ -29,6 +29,7 @@ function GlobalState(props) {
   const data = {
     products,
     load,
+    setLoad,
     search,
     setSearch,
     cart,
@@ -36,7 +37,8 @@ function GlobalState(props) {
     menuIsVisible,
     setMenuIsVisible,
     menuMobileIsVisible,
-    setMenuMobileIsVisible
+    setMenuMobileIsVisible,
+    getAllProducts
   };
   return ( 
     <>

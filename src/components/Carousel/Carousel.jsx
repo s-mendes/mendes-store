@@ -13,17 +13,17 @@ import 'swiper/css/pagination';
 import './styles.css';
 
 import { Navigation, Pagination, Mousewheel, Keyboard, Autoplay } from 'swiper';
+import { Container } from './carousel-styled';
 
 function Carousel() {
   return ( 
-    <>
+    <Container>
       <Swiper
         autoplay={{
           delay: 3000,
           disableOnInteraction: false,
         }}
         loop={true}
-        
         cssMode={true}
         navigation={true}
         pagination={{
@@ -32,13 +32,13 @@ function Carousel() {
         mousewheel={true}
         keyboard={true}
         modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
-        className="mySwiper"
+        className="banner"
       >
         <SwiperSlide><img src={Banner1} alt="" /></SwiperSlide>
         <SwiperSlide><img src={Banner2} alt="" /></SwiperSlide>
         <SwiperSlide><img src={Banner3} alt="" /></SwiperSlide>
       </Swiper>
-    </>
+    </Container>
   );
 }
 
