@@ -1,9 +1,11 @@
 .products .swiper {
   height: 100%;
+  margin: 0 20px;
 }
 
 .products .swiper-slide {
-  height: 423px;
+  height: 395px;
+  width: 200px;
   font-size: 18px;
   background: #ebebeb;
   /* Center slide text vertically */
@@ -28,7 +30,7 @@
   /* Estilize as setas de navegação */
   position: absolute;
   top: 40%;
-  right: 5px;
+  right: 2px;
   transform: translateY(0%);
   width: 40px;
   height: 40px;
@@ -68,7 +70,7 @@
   transform: translate(-35%, -50%) rotate(225deg);
 }
 .products .swiper-button-prev {
-  left: 5px;
+  left: 2px;
 }
 
 .products .swiper-button-next:hover,

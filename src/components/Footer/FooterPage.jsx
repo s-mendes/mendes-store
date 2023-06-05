@@ -1,34 +1,35 @@
 import React from 'react';
-import { CopyRight, Footer, Pagamento, Pay, SubMenu } from './footer-styled';
+import { Container, CopyRight, Footer, Pagamento, Pay, SubMenu } from './footer-styled';
 import { BsInstagram, BsTwitter, BsFacebook, BsYoutube } from 'react-icons/bs';
 import { SocialMedias } from './footer-styled';
 
 function FooterPage() {
   return (
     <>
-      <Footer>
-        <Pagamento>
+      <Container>
+        <Footer>
+          <Pagamento>
           
-          <form>
-            <label htmlFor="cadastro">Inscreva-se para receber nossas incríveis novidades por e-mail!</label>
-            <input type="text" name="cadastro" className="name" placeholder="Nome"/>
-            <input type="email" name="email" id="email" className="email" placeholder="Email" />
-            <button type="submit" className="button">ASSINAR</button>
-          </form>
+            <form>
+              <label htmlFor="cadastro">Inscreva-se para receber nossas incríveis novidades por e-mail!</label>
+              <input type="text" name="cadastro" className="name" placeholder="Nome"/>
+              <input type="email" name="email" id="email" className="email" placeholder="Email" />
+              <button type="submit" className="button">ASSINAR</button>
+            </form>
           
-          <Pay>
-            <img src="/icons/american-express.svg" alt="" />
-            <img src="/icons/boleto.svg" alt="" />
-            <img src="/icons/diners.svg" alt="" />
-            <img src="/icons/elo.svg" alt="" />
-            <img src="/icons/mastercard.svg" alt="" />
-            <img src="/icons/paypal.svg" alt="" />
-            <img src="/icons/pix.svg" alt="" />
-            <img src="/icons/visa.svg" alt="" />
-          </Pay>
+            <Pay>
+              <img src="/icons/american-express.svg" alt="" />
+              <img src="/icons/boleto.svg" alt="" />
+              <img src="/icons/diners.svg" alt="" />
+              <img src="/icons/elo.svg" alt="" />
+              <img src="/icons/mastercard.svg" alt="" />
+              <img src="/icons/paypal.svg" alt="" />
+              <img src="/icons/pix.svg" alt="" />
+              <img src="/icons/visa.svg" alt="" />
+            </Pay>
 
-          <SubMenu>
-            <div>
+            <SubMenu>
+        
               <div>
                 <ul>
                   <h3>Categorias</h3>
@@ -68,11 +69,14 @@ function FooterPage() {
                   </SocialMedias>
                 </ul>
               </div>
-            </div>
-          </SubMenu>
-        </Pagamento>
-        <CopyRight>© 2023 - Todos os direitos reservados. Conteúdo licenciado.</CopyRight>
-      </Footer>
+             
+            </SubMenu>
+          </Pagamento>
+        </Footer>
+      </Container>
+      <CopyRight>
+          © 2023 - Todos os direitos reservados. Conteúdo licenciado.
+      </CopyRight>
     </>
   );
 }

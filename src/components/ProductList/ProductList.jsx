@@ -13,8 +13,7 @@ import { Pagination, Navigation } from 'swiper';
 
 function ProductList(props) {
   const { load, setLoad } = useContext(GlobalContext);
-  const [roupasFemininas, setRoupasFemininas] = useState([]);
-  const [slidesPerView, setSlidesPerView] = useState(4);
+  const [ roupasFemininas, setRoupasFemininas] = useState([]);
   const {title, searchItens} = props;
 
   async function getProducts() {
@@ -33,26 +32,6 @@ function ProductList(props) {
     getProducts();
   }, []);
 
-  useEffect(() => {
-    function updateSlidesPerView() {
-      if (window.innerWidth < 300) {
-        setSlidesPerView(1);
-      } else if (window.innerWidth < 750) {
-        setSlidesPerView(2);
-      } else if (window.innerWidth < 1000) {
-        setSlidesPerView(3);
-      } else {
-        setSlidesPerView(4);
-      }
-    }
-
-    updateSlidesPerView();
-
-    window.addEventListener('resize', updateSlidesPerView);
-    return () => {
-      window.removeEventListener('resize', updateSlidesPerView);
-    };
-  }, []);
 
   return ( 
     <Container>
@@ -62,7 +41,8 @@ function ProductList(props) {
       </Title>
       {load || 
         <Swiper
-          slidesPerView={slidesPerView}
+          slidesPerView={'auto'}
+          spaceBetween={15}
           centeredSlides={false}
           navigation={true}
           pagination={{

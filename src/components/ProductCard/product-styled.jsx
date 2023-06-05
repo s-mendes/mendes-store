@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 export const CardContainer = styled.div`
     width: 100%;
-    height: 100%;
-    max-width: 230px;
+    height: 99%;
+    max-width: 200px;
     display: flex;
     flex-direction: column;
     border: none;
@@ -24,17 +24,14 @@ export const CardContainer = styled.div`
       height: 100%;
     }
     .image{
-      height: 220px;
+      height: 200px;
     }
-    @media screen and (max-width: 500px) {
-      width: 95%;
-      height: 95%;
-    }
+
 `;
 
 export const Img = styled.img`
   border-radius: 10px 10px 0 0;
-  height: 220px;
+  height: 200px;
 `;
 
 export const ProdName = styled.p `
@@ -47,6 +44,7 @@ export const Price = styled.p `
   font-weight: 600;
   display: block;
   color: #00acb7;
+  line-height: 70%;
 `;
 
 export const Installments = styled.p `
@@ -82,6 +80,7 @@ export const Prices = styled.div `
 `;
 
 export const FullPrice = styled.p `
+  font-size: 14px;
   color: #75757588;
   text-decoration: line-through;
 `;
