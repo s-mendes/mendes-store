@@ -1,0 +1,85 @@
+.products .swiper {
+  height: 100%;
+}
+
+.products .swiper-slide {
+  height: 423px;
+  font-size: 18px;
+  background: #ebebeb;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.products .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.products .swiper-pagination-bullet {
+  display: none;
+}
+
+.products .swiper-button-next,
+.products .swiper-button-prev {
+  /* Estilize as setas de navegação */
+  position: absolute;
+  top: 40%;
+  right: 5px;
+  transform: translateY(0%);
+  width: 40px;
+  height: 40px;
+  background-color: white; /* Cor vermelha como exemplo */
+  border-radius: 30px;
+  z-index: 10;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 21%);
+  
+}
+@media screen and (max-width: 1100px) {
+  .products .swiper-button-next,
+  .products .swiper-button-prev {
+      display: none;
+    }
+  }
+
+.products .swiper-button-next::after,
+.products .swiper-button-prev::after {
+  /* Estilize o ícone da seta */
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #00acb7;
+  border-right: 2px solid #00acb7;
+  transform: translate(-65%, -50%) rotate(45deg);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: transform 0.2s;
+  
+}
+
+.products .swiper-button-prev::after {
+  transform: translate(-35%, -50%) rotate(225deg);
+}
+.products .swiper-button-prev {
+  left: 5px;
+}
+
+.products .swiper-button-next:hover,
+.products .swiper-button-prev:hover {
+  opacity: 1;
+}
+
+.products .swiper-button-next:hover::after {
+  transform: translate(-65%, -50%) rotate(45deg) scale(1.2);
+}
+
+.products .swiper-button-prev:hover::after {
+  transform: translate(-35%, -50%) rotate(225deg) scale(1.2);
+}
