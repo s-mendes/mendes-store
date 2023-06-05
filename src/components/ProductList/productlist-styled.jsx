@@ -16,7 +16,12 @@ export const Title = styled.div`
 export const Container = styled.div`
   max-width: 1100px;
   margin: 0 auto;
-  @media screen and (max-width: 500px) {
-      width: 90%;
+  & .swiper {
+    margin: 0 20px;
+  }
+  @media screen and (max-width: 1100px) {
+      & .swiper {
+      margin: 0 0 0 20px;
+      }
     }
 `;

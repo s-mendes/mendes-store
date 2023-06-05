@@ -1,9 +1,17 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-export const Footer = styled.footer`
-  color: gray;
-  
+export const Container = styled.footer`
+  width: 100%;
+  background-color: #fff;
+`;
 
+export const Footer = styled.div`
+  max-width: 1100px;
+  margin: 0 auto;
+  font-size: 0.9rem;
+  color: #757575;
+  margin-top: 25px;
+  padding: 25px 15px 20px 15px;
 `;
 export const Pagamento = styled.div`
   display: flex;
@@ -15,49 +23,56 @@ export const Pagamento = styled.div`
     flex-wrap:wrap;
     gap: 1rem;
     align-items: center;
+    justify-content: center;
     margin-top:1rem;
-    color: gray;
+    color: #757575;
     
     .name{
       flex: 1 0 140px;
       height: 2rem;
       border-radius: 5px;
       text-align:center;
-      border: 1px solid lightgray;
+      border: none;
+      background-color: #eaeaea55;
+      color: #757575;
+      font-size: 0.8rem;
+      font-weight: 500px;
+      border-radius: 15px;
+      box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
     }
     .email{
       flex: 1 0 140px;
       height: 2rem;
       text-align:center;
       border-radius: 5px;
-      border: 1px solid lightgray;
+      border: none;
+      background-color: #eaeaea55;
+      color: #757575;
+      font-size: 0.8rem;
+      font-weight: 500px;
+      border-radius: 15px;
+      box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
     }
     .button{
       flex: 1 0 40px;
       height: 2rem;
-      color: gray;
+      color: #fff;
       max-width:7rem;
       min-width:5rem;
-      border-radius: 5px;
+      border-radius: 15px;
       background-color:white;
-      border: 1px solid lightgray;
+      background-color: #00acb7;
+      border: none;
     }
-  }
-
-  div {
-    width: 50vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin: 1% 2% 0 2%;
   }
 `;
 export const SubMenu = styled.div`
-  border-top: 1px solid lightgray;
-  width: 50vw;
+  border-top: 1px solid #eaeaea;
+  width: 100%;
   display: flex;
-
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
   ul {
     list-style: none;
     margin-top: 1rem;
@@ -72,7 +87,11 @@ export const SubMenu = styled.div`
 `;
 
 export const SocialMedias = styled.div`
+  display: flex;
+  gap: 10px;
+  align-items: center;
   max-width: 8vw;
+  justify-content: center;
   min-width: 90%;
   padding-top:2.5rem;
   color: #05acb7;
@@ -82,12 +101,18 @@ export const SocialMedias = styled.div`
 export const CopyRight =styled.div`
 display: flex;
 justify-content:center;
-height: 10vh;
+height: 80px;
 align-items:center;
-background-color:lightgrey;
-margin-top:2rem;
-`
+background-color: #3b3a38;
+color: #fff;
+text-align: center;
+`;
   
 export const Pay = styled.div`
-color:gray;
-`
+  padding: 20px 0;
+  color:gray;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+`;
