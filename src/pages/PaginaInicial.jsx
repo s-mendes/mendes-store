@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../components/Header/Header';
 import Carousel from '../components/Carousel/Carousel';
 import ProductList  from '../components/ProductList/ProductList';
+import FooterPage from '../components/Footer/FooterPage';
 
 function PaginaInicial() {
   return ( 
@@ -16,6 +17,7 @@ function PaginaInicial() {
         title={'Moletons para ficar quentinho no frio'}
         searchItens={'moletons'}
       />
+      <FooterPage />
     </>
   );
 }

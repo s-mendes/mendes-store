@@ -23,7 +23,6 @@ function ProductList(props) {
       const products = await fetchItems(searchItens);
       const result = await Promise.all(products);
       setRoupasFemininas(result);
-      console.log(result);
       setLoad(false);
     } catch (err) {
       console.log(err);
