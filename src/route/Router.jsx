@@ -9,7 +9,7 @@ function Router() {
     <BrowserRouter>
       <Routes>
         <Route index element={ <PaginaInicial />} />
-        <Route path="/product" element={ <Product /> } />
+        <Route path="/product/:productId" element={ <Product /> } />
         {/* <Route path="*" element={ <ErrorPage /> } /> */}
       </Routes>
     </BrowserRouter>

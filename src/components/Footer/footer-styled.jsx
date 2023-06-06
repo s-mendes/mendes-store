@@ -11,7 +11,7 @@ export const Footer = styled.div`
   font-size: 0.9rem;
   color: #757575;
   margin-top: 25px;
-  padding: 25px 15px 20px 15px;
+  padding: 15px 15px 20px 15px;
 `;
 export const Pagamento = styled.div`
   display: flex;
@@ -26,7 +26,8 @@ export const Pagamento = styled.div`
     justify-content: center;
     margin-top:1rem;
     color: #757575;
-    
+    font-size: 16px;
+    font-weight: 400;
     .name{
       flex: 1 0 140px;
       height: 2rem;
@@ -63,6 +64,7 @@ export const Pagamento = styled.div`
       background-color:white;
       background-color: #00acb7;
       border: none;
+      font-weight: 500;
     }
   }
 `;
@@ -76,12 +78,15 @@ export const SubMenu = styled.div`
   ul {
     list-style: none;
     margin-top: 1rem;
+    font-weight: 700;
 
     h3 {
       margin-bottom: 1vw;
     }
     li {
       margin-top: 0.4vh;
+      font-size: 16px;
+      font-weight: 400;
     }
   }
 `;

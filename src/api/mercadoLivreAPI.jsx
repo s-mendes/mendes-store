@@ -8,3 +8,12 @@ export const fetchItems = async (query) => {
     console.log(error);
   }
 };
+
+export const fetchProduct = async (params) => {
+  try {
+    const response = await axios.get(`https://api.mercadolibre.com/items/${params}`);
+    return response;
+  } catch (error) {
+    console.log(error);
+  }
+};

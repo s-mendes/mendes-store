@@ -16,6 +16,7 @@ export const Title = styled.div`
 export const Container = styled.div`
   max-width: 1100px;
   margin: 0 auto;
+  padding: 30px 0;
   & .swiper {
     margin: 0 20px;
   }
