@@ -14,7 +14,7 @@ import { Pagination, Navigation } from 'swiper';
 function ProductList(props) {
   const { load, setLoad } = useContext(GlobalContext);
   const [ roupasFemininas, setRoupasFemininas] = useState([]);
-  const {title, searchItens} = props;
+  const { title, searchItens } = props;
 
   async function getProducts() {
     try {
@@ -35,7 +35,6 @@ function ProductList(props) {
 
   return ( 
     <Container>
-      
       <Title>
         {title}
       </Title>

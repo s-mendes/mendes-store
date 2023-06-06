@@ -9,6 +9,7 @@ function GlobalState(props) {
   const [cart, setCart] = useState([]);
   const [ menuIsVisible, setMenuIsVisible ] = useState(false);
   const [ menuMobileIsVisible, setMenuMobileIsVisible ] = useState(false);
+  const [ similar, setSimilar ] = useState('pijamas de frio');
   
   async function getAllProducts(search) {
     try {
@@ -38,7 +39,9 @@ function GlobalState(props) {
     setMenuIsVisible,
     menuMobileIsVisible,
     setMenuMobileIsVisible,
-    getAllProducts
+    getAllProducts,
+    similar,
+    setSimilar
   };
   return ( 
     <>

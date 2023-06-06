@@ -5,6 +5,7 @@ export const MainContainer = styled.nav`
   position: relative;
   height: 40px;
   z-index: 5;
+  border-bottom: 1px solid #e9eae9;
   @media screen and (max-width: 1130px) {
       display: none;
       pointer-events: none;
@@ -85,8 +86,8 @@ export const DropdownMenu = styled.div`
   position: absolute;
   z-index: 2;
   background-color: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
   /* color: #757575; */
-  border-top: 1px solid #e9eae9;
   width: 100%;
   opacity: 0;
   transform: translateY(-200px);

@@ -14,7 +14,7 @@ function FooterPage() {
               <label htmlFor="cadastro">Inscreva-se para receber nossas incríveis novidades por e-mail!</label>
               <input type="text" name="cadastro" className="name" placeholder="Nome"/>
               <input type="email" name="email" id="email" className="email" placeholder="Email" />
-              <button type="submit" className="button">ASSINAR</button>
+              <button type="submit" className="button">Assinar</button>
             </form>
           
             <Pay>

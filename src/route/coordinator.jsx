@@ -9,3 +9,7 @@ export const goToSignUp = (navigate) => {
 export const goHome = (navigate) => {
   navigate('/');
 };
+
+export const goToProduct = (navigate, productId) => {
+  navigate(`/product/${productId}`);
+};

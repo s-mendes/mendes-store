@@ -1,16 +1,23 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { CardContainer, Discount, FullPrice, Img, Installments, Price, Prices, ProdButton, ProdName } from './product-styled';
 import formatCurrency from '../../util/formatCurrency';
-
+import { useNavigate } from 'react-router-dom';
+import { goToProduct } from '../../route/coordinator';
+import GlobalContext from '../../contexts/GlobalContext';
 
 
 function ProductCard(props) {
 
   const { product } = props;
+  const navigate = useNavigate();
+  const { setSimilar } = useContext(GlobalContext);
 
   return ( 
     <>
-      <CardContainer>
+      <CardContainer onClick={() => {
+        setSimilar(product.title);
+        goToProduct(navigate, product.id);
+      }}>
         <div className="image">
           <Img src={product.thumbnail.replace(/\w\.jpg/gi, 'W.jpg')}/>
         </div>

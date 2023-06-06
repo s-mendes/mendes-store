@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const MainContainer = styled.div`
 
   background-color: #fff;
+  padding: 30px 0;
   &>div{
     max-width: 1100px;
     margin: 0 auto;
@@ -19,13 +20,68 @@ export const MainContainer = styled.div`
 `;
 
 export const ImageContainer = styled.div`
-max-width: 666px;
+  max-width: 650px;
+  max-height: 850px;
+  padding-right: 15px;
+
   &img{
-    max-width: 100%;
-    height: auto;
     aspect-ratio: 1 / 1;
-    
   }
+  .swiper {
+  /* width: 100%;
+  height: 100%; */
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+  .swiper-slide {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .main-image {
+    /* height: 80%;
+    width: 100%; */
+    max-height: 664px;
+    width: auto;
+  }
+
+  .slides-image {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+  }
+
+  .slides-image .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+  }
+
+  .slides-image .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    max-height: 664px;
+    object-fit: cover;
+  }
+
+
+  .main-image {
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid #E9EAE9;
+    margin-bottom: 16px;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+  color: #757575;
+  }
+
 `;
   
 export const DescriptionContainer = styled.div`
