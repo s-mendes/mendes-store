@@ -1,9 +1,8 @@
 import React from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import Banner1 from './assets/banner1.svg';
-import Banner2 from './assets/banner2.svg';
-import Banner3 from './assets/banner3.svg';
+import Banner1 from './assets/bannerpromo1.svg';
+import Banner2 from './assets/bannerpromo2.svg';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -36,7 +35,7 @@ function Carousel() {
       >
         <SwiperSlide><img src={Banner1} alt="" /></SwiperSlide>
         <SwiperSlide><img src={Banner2} alt="" /></SwiperSlide>
-        <SwiperSlide><img src={Banner3} alt="" /></SwiperSlide>
+
       </Swiper>
     </Container>
   );
