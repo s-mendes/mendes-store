@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const CardContainer = styled.div`
     width: 100%;
-    height: 99%;
+    height: 350px;
     max-width: 200px;
     display: flex;
     flex-direction: column;
@@ -14,6 +14,9 @@ export const CardContainer = styled.div`
     border-radius: 10px;
     color: #757575;
     box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+    -webkit-transition: height 0.2s, opacity 0.8s;
+    -moz-transition: height 0.2s, opacity 0.8s;
+    transition: height 0.2s, opacity 0.8s;
     .description {
       border-top: 1px solid #E9EAE9;
       display: flex;
@@ -26,7 +29,24 @@ export const CardContainer = styled.div`
     .image{
       height: 200px;
     }
+    & button{
+      opacity: 0;
+      position: absolute;
 
+    }
+    &:hover {
+      height: 390px;
+    }
+    &:hover{
+      button{
+        display: block;
+        position: relative;
+        opacity: 1;
+        -webkit-transition:  opacity 0.4s ease-in;
+      -moz-transition:  opacity 0.4s ease-in;
+      transition:  opacity 0.4s ease-in;
+      }
+    }
 `;
 
 export const Img = styled.img`
