@@ -17,7 +17,6 @@ function GlobalState(props) {
       const products = await fetchItems(search ? search : 'casacos de frio');
       const result = await Promise.all(products);
       setProducts(result);
-      console.log(products);
       setLoad(false);
     } catch (err) {
       console.log(err);
