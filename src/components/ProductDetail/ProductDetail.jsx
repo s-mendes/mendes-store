@@ -14,15 +14,17 @@ import './styles.css';
 
 // import required modules
 import { FreeMode, Navigation, Thumbs } from 'swiper';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { fetchProduct } from '../../api/mercadoLivreAPI';
 import formatCurrency from '../../util/formatCurrency';
+import { goToCartPage } from '../../route/coordinator';
 
 function ProductDetail() {
 
   const [ loadProduct, setLoadProduct]  = useState(true);
   const [ product, setProduct] = useState([]);
   const [ thumbsSwiper, setThumbsSwiper] = useState(null);
+  const navigate = useNavigate();
 
   const pathParams = useParams();
 
@@ -106,8 +108,8 @@ function ProductDetail() {
               <div><span>4G</span></div>
             </Sizes>
             <Quantity><span>Quantidade:</span> <input type="number" placeholder="1"/> <p>Estoque disponível</p> </Quantity>
-            <BuyButton><AiOutlineCreditCard />Comprar Agora</BuyButton>
-            <CartButton><AiOutlineShoppingCart />Adicionar ao carrinho</CartButton>
+            <BuyButton onClick={() => goToCartPage(navigate)}><AiOutlineCreditCard />Comprar Agora</BuyButton>
+            <CartButton onClick={() => goToCartPage(navigate)}><AiOutlineShoppingCart />Adicionar ao carrinho</CartButton>
             <SearchCEP>
               <p>Consultar prazo e valor do frete:</p>
               <input type="number" /><button>Buscar</button>

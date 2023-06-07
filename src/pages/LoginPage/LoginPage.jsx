@@ -1,11 +1,12 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { goToSignUp } from '../../routes/coordinator';
-import { FormContainer, InputContainer, MainContainer } from './styled.js';
-import useForms from '../../hooks/useForms.js';
-import { baseURL } from '../../constants/baseURL.js';
+import { goToSignUp } from '../../route/coordinator.jsx';
+import { FormContainer, FullContainer, InputContainer, MainContainer } from './styled.js';
+import useForms from '../../hooks/useForms';
+import { baseURL } from '../../constants/baseURL';
 import axios from 'axios';
-import Header from '../../Components/Header/Header';
+import Header from '../../components/Header/Header.jsx';
+import FooterPage from '../../components/Footer/FooterPage.jsx';
 
 
 function LoginPage() {
@@ -38,6 +39,7 @@ function LoginPage() {
   return (
     <>
       <Header />
+      <FullContainer />
       <MainContainer>
         <h1>Login</h1>
         <FormContainer onSubmit={fazerLogin}>
@@ -66,6 +68,7 @@ function LoginPage() {
           <button onClick={() => goToSignUp(navigate)}>Não tenho cadastro</button>
         </FormContainer>
       </MainContainer>
+      <FooterPage />
     </>
   );
 }

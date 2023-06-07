@@ -65,6 +65,7 @@ export const Pagamento = styled.div`
       background-color: #00acb7;
       border: none;
       font-weight: 500;
+      cursor: pointer;
     }
   }
 `;

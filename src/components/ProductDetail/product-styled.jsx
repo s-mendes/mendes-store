@@ -236,6 +236,7 @@ export const SearchCEP = styled.div`
     padding-top: 15px;
     color:#00A3AD;
     text-decoration: underline;
+    cursor: pointer;
   }
   &>input{
     font-size: 16px;

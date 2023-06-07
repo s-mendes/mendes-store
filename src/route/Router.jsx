@@ -3,6 +3,9 @@ import PaginaInicial from '../pages/PaginaInicial';
 // import ErrorPage from '../pages/ErrorPage';
 import React from 'react';
 import Product from '../pages/Product';
+import CartPage from '../pages/CartPage';
+import LoginPage from '../pages/LoginPage/LoginPage';
+import SignUpPage from '../pages/SignUpPage/SignUpPage';
 
 function Router() {
   return ( 
@@ -10,6 +13,9 @@ function Router() {
       <Routes>
         <Route index element={ <PaginaInicial />} />
         <Route path="/product/:productId" element={ <Product /> } />
+        <Route path="/cart" element={ <CartPage /> } />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/signup" element={ <SignUpPage /> } />
         {/* <Route path="*" element={ <ErrorPage /> } /> */}
       </Routes>
     </BrowserRouter>
