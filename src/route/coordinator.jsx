@@ -17,3 +17,7 @@ export const goToProduct = (navigate, productId) => {
 export const goToCartPage = (navigate) => {
   navigate('/cart');
 };
+
+export const goToAllProducts = (navigate) => {
+  navigate('/products');
+};

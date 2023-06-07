@@ -3,7 +3,7 @@ import { fetchItems } from '../api/mercadoLivreAPI';
 import GlobalContext from './GlobalContext';
 
 function GlobalState(props) {
-  const [products, setProducts ] = useState([]);
+  const [ products, setProducts ] = useState([]);
   const [ load, setLoad ] = useState(true);
   const [ search, setSearch ] = useState('');
   const [cart, setCart] = useState([]);
@@ -14,9 +14,10 @@ function GlobalState(props) {
   async function getAllProducts(search) {
     try {
       setLoad(true);
-      const products = await fetchItems(search ? search : 'astronauta');
+      const products = await fetchItems(search ? search : 'casacos de frio');
       const result = await Promise.all(products);
       setProducts(result);
+      console.log(products);
       setLoad(false);
     } catch (err) {
       console.log(err);

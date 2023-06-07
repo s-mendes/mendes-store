@@ -10,6 +10,7 @@ export const Menu = styled.div`
   }
   a:hover {
     color: #00acb7;
+    cursor: pointer;
   }
   @media screen and (max-width: 1130px) {
       display: none;

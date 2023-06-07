@@ -1,27 +1,30 @@
 import React from 'react';
 import { Menu, Menu1, Menu2, Menu3, Title } from './menu-drop-styled';
+import { useNavigate } from 'react-router-dom';
+import { goToAllProducts } from '../../route/coordinator';
 
 function MenuDrop() {
+  const navigate = useNavigate();
   return ( 
     <Menu>
       <Menu1>
         <Title>Roupas <span>[+]</span></Title>
         <ul>
-          <li><a href="#">Camisetas</a></li>
-          <li><a href="#">Camisetas Polo</a></li>
-          <li><a href="#">Calças Casuais</a></li>
-          <li><a href="#">Calças Casuais</a></li>
-          <li><a href="#">Calças Jeans</a></li>
-          <li><a href="#">Moletons</a></li>
+          <li><a onClick={() => goToAllProducts(navigate)}>Camisetas</a></li>
+          <li><a onClick={() => goToAllProducts(navigate)}>Camisetas Polo</a></li>
+          <li><a onClick={() => goToAllProducts(navigate)}>Calças Casuais</a></li>
+          <li><a onClick={() => goToAllProducts(navigate)}>Calças Casuais</a></li>
+          <li><a onClick={() => goToAllProducts(navigate)}>Calças Jeans</a></li>
+          <li><a onClick={() => goToAllProducts(navigate)}>Moletons</a></li>
         </ul>
       </Menu1>
       <Menu2>
         <Title>Calçados <span>[+]</span></Title>
         <ul>
-          <li><a href="#">Tênis Casual</a></li>
-          <li><a href="#">Tênis de Corrida</a></li>
-          <li><a href="#">Botas</a></li>
-          <li><a href="#">Chinelos e Slides</a></li>
+          <li><a onClick={() => goToAllProducts(navigate)}>Tênis Casual</a></li>
+          <li><a onClick={() => goToAllProducts(navigate)}>Tênis de Corrida</a></li>
+          <li><a onClick={() => goToAllProducts(navigate)}>Botas</a></li>
+          <li><a onClick={() => goToAllProducts(navigate)}>Chinelos e Slides</a></li>
         </ul>
       </Menu2>
       <Menu3>
@@ -29,25 +32,25 @@ function MenuDrop() {
         <Title>Marcas preferidas dos clientes <span>[+]</span></Title>
         <div>
           <ul>
-            <li><a href="#">Hurley</a></li>
-            <li><a href="#">Volcon</a></li>
-            <li><a href="#">New Era</a></li>
-            <li><a href="#">Rusty</a></li>
-            <li><a href="#">Hang Loose</a></li>
-            <li><a href="#">Oakley</a></li>
+            <li><a onClick={() => goToAllProducts(navigate)}>Hurley</a></li>
+            <li><a onClick={() => goToAllProducts(navigate)}>Volcon</a></li>
+            <li><a onClick={() => goToAllProducts(navigate)}>New Era</a></li>
+            <li><a onClick={() => goToAllProducts(navigate)}>Rusty</a></li>
+            <li><a onClick={() => goToAllProducts(navigate)}>Hang Loose</a></li>
+            <li><a onClick={() => goToAllProducts(navigate)}>Oakley</a></li>
           </ul>
           <ul>
-            <li><a href="#">Quiksilver</a></li>
-            <li><a href="#">D.C. Shoes</a></li>
-            <li><a href="#">Reserva</a></li>
-            <li><a href="#">Nike</a></li>
-            <li><a href="#">Adidas</a></li>
-            <li><a href="#">Converrse</a></li>
+            <li><a onClick={() => goToAllProducts(navigate)}>Quiksilver</a></li>
+            <li><a onClick={() => goToAllProducts(navigate)}>D.C. Shoes</a></li>
+            <li><a onClick={() => goToAllProducts(navigate)}>Reserva</a></li>
+            <li><a onClick={() => goToAllProducts(navigate)}>Nike</a></li>
+            <li><a onClick={() => goToAllProducts(navigate)}>Adidas</a></li>
+            <li><a onClick={() => goToAllProducts(navigate)}>Converrse</a></li>
           </ul>
           <ul>
-            <li><a href="#">Vans</a></li>
-            <li><a href="#">Ride</a></li>
-            <li><a href="#">Asics</a></li>
+            <li><a onClick={() => goToAllProducts(navigate)}>Vans</a></li>
+            <li><a onClick={() => goToAllProducts(navigate)}>Ride</a></li>
+            <li><a onClick={() => goToAllProducts(navigate)}>Asics</a></li>
           </ul>
         </div>
       </Menu3>
