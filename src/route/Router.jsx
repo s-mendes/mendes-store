@@ -6,6 +6,7 @@ import Product from '../pages/Product';
 import CartPage from '../pages/CartPage';
 import LoginPage from '../pages/LoginPage/LoginPage';
 import SignUpPage from '../pages/SignUpPage/SignUpPage';
+import AllProductsPage from '../pages/AllProductsPage';
 
 function Router() {
   return ( 
@@ -13,6 +14,7 @@ function Router() {
       <Routes>
         <Route index element={ <PaginaInicial />} />
         <Route path="/product/:productId" element={ <Product /> } />
+        <Route path="/products/" element={ <AllProductsPage /> } />
         <Route path="/cart" element={ <CartPage /> } />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={ <SignUpPage /> } />

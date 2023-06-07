@@ -33,27 +33,28 @@ function FooterPage() {
               <div>
                 <ul>
                   <h3>Categorias</h3>
-                  <li>Feminino</li>
-                  <li>Masculino</li>
-                  <li>Infantil</li>
-                  <li>Acessórios</li>
-                  <li>Calçados</li>
-                  <li>Decoração</li>
-                  <li>Outlet</li>
+                  <li><a href="#">Feminino</a></li>
+                  <li><a href="#">Masculino</a></li>
+                  <li><a href="#">Infantil</a></li>
+                  <li><a href="#">Acessórios</a></li>
+                  <li><a href="#">Calçados</a></li>
+                  <li><a href="#">Decoração</a></li>
+                  <li><a href="#">Outlet</a></li>
                 </ul>
               </div>
               <div>
                 <ul>
                   <h3>Institucional</h3>
-                  <li>Quem somos</li>
-                  <li>Nossa loja</li>
-                  <li>Central de atendimento</li>
-                  <li>Trabalhe conosco</li>
-                  <li>Política de privacidade</li>
-                  <li>Condiçoes e frete</li>
-                  <li>Sobre nossos produtos</li>
+                  <li><a href="#">Quem somos</a></li>
+                  <li><a href="#">Nossa loja</a></li>
+                  <li><a href="#">Central de atendimento</a></li>
+                  <li><a href="#">Trabalhe conosco</a></li>
+                  <li><a href="#">Política de privacidade</a></li>
+                  <li><a href="#">Condições e frete</a></li>
+                  <li><a href="#">Sobre nossos produtos</a></li>
                 </ul>
               </div>
+
               <div>
                 <ul>
                   <h3>Ajuda</h3>

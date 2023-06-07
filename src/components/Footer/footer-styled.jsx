@@ -89,6 +89,14 @@ export const SubMenu = styled.div`
       font-size: 16px;
       font-weight: 400;
     }
+    a {
+      text-decoration: none;
+      color: #757575;
+    }
+    a:hover{
+      color: #00acb7;
+      cursor: pointer;
+    }
   }
 `;
 
