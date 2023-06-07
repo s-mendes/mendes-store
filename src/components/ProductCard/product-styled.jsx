@@ -31,7 +31,7 @@ export const CardContainer = styled.div`
     }
     & button{
       opacity: 0;
-      position: absolute;
+      /* position: absolute; */
 
     }
     &:hover {
@@ -43,8 +43,8 @@ export const CardContainer = styled.div`
         position: relative;
         opacity: 1;
         -webkit-transition:  opacity 0.4s ease-in;
-      -moz-transition:  opacity 0.4s ease-in;
-      transition:  opacity 0.4s ease-in;
+        -moz-transition:  opacity 0.4s ease-in;
+        transition:  opacity 0.4s ease-in;
       }
     }
 `;
