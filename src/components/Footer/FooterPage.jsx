@@ -58,8 +58,8 @@ function FooterPage() {
                 <ul>
                   <h3>Ajuda</h3>
                   <li>00-0000-0000</li>
-                  <li>00-0-0000-0000</li>
-                  <li>@mendes-store.com.br</li>
+                  <li>+55 37 9.9996-6963</li>
+                  <li>@s-mendes</li>
                   <li>SEG a SAB das 9H - 19H</li>
                   <SocialMedias>
                     <BsInstagram />

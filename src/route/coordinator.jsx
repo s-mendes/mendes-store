@@ -13,3 +13,7 @@ export const goHome = (navigate) => {
 export const goToProduct = (navigate, productId) => {
   navigate(`/product/${productId}`);
 };
+
+export const goToCartPage = (navigate) => {
+  navigate('/cart');
+};
