@@ -27,6 +27,10 @@ export const Filters = styled.aside`
     line-height: 1.2rem;
     cursor: pointer;
   }
+  p:hover{
+    color: #00acb7;
+    cursor: pointer;
+  }
   .search{
     position: relative;
     margin-bottom: 10px;
@@ -56,6 +60,7 @@ export const ProductsContainer = styled.section`
   flex-direction: column;
   gap: 15px;
   padding-top: 15px;
+  width: 100%;
   h2{
     font-weight: 400;
     font-size: 32px;
@@ -82,11 +87,12 @@ export const ProductsContainer = styled.section`
 `;
 
 export const ProductList = styled.div`
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: 410px;
+  gap: 0px 20px;
   &>div{
-    height: 390px;
+    height: 350px;
   }
 `;
 
