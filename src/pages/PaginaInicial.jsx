@@ -4,12 +4,14 @@ import Carousel from '../components/Carousel/Carousel';
 import ProductList  from '../components/ProductList/ProductList';
 import FooterPage from '../components/Footer/FooterPage';
 import Banner from '../components/Banner/Banner';
+import Facilities from '../components/Facilities/Facilities';
 
 function PaginaInicial() {
   return ( 
     <>
       <Header />
       <Carousel />
+      <Facilities />
       <Banner 
         banner1={'banner/pijama4.png'} 
         banner2={'banner/pijama2.png'}
