@@ -80,9 +80,7 @@ function AllProducts() {
           <ProductList>
             {load || products.map((product) => {
               return (
-                <>
-                  <ProductCard  key={product.id} product={product}/>
-                </>
+                <ProductCard  key={product.id} product={product}/>
               );
             })}
           </ProductList>

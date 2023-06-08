@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useRef } from 'react';
 import { Container, Menu, MenuItem, Login, UserContainer } from './menu-mobile-styled';
 import { CgProfile } from 'react-icons/cg';
 import GlobalContext from '../../contexts/GlobalContext';
-import { goToLogin, goToSignUp } from '../../route/coordinator';
+import { goToAllProducts, goToLogin, goToSignUp } from '../../route/coordinator';
 import { useNavigate } from 'react-router-dom';
 import { AiOutlineHeart, AiOutlineQuestionCircle } from 'react-icons/ai';
 
@@ -38,10 +38,16 @@ function MenuMobile() {
             </div>
             <div className={'login-text'}>
               <p>
-              Faça <b className={'link'} onClick={() => goToLogin(navigate)}>LOGIN</b> ou 
+              Faça <b className={'link'} onClick={() => {
+                  setMenuMobileIsVisible(false);
+                  goToLogin(navigate);
+                }}>LOGIN</b> ou 
               </p>
               <p>
-              crie seu <b className={'link'} onClick={() => goToSignUp(navigate)}>CADASTRO</b>
+              crie seu <b className={'link'} onClick={() => {
+                  setMenuMobileIsVisible(false);
+                  goToSignUp(navigate);
+                }}>CADASTRO</b>
               </p>
             </div>
           </Login>
@@ -50,14 +56,38 @@ function MenuMobile() {
             <AiOutlineQuestionCircle />
           </div>
         </UserContainer>
-        <MenuItem onClick={() => setMenuMobileIsVisible(false)} href={'#'}>Todas Categorias</MenuItem>
-        <MenuItem onClick={() => setMenuMobileIsVisible(false)} href={'#'}>Feminino</MenuItem>
-        <MenuItem onClick={() => setMenuMobileIsVisible(false)} href={'#'}>Masculino</MenuItem>
-        <MenuItem onClick={() => setMenuMobileIsVisible(false)} href={'#'}>Infantil</MenuItem>
-        <MenuItem onClick={() => setMenuMobileIsVisible(false)} href={'#'}>Acessórios</MenuItem>
-        <MenuItem onClick={() => setMenuMobileIsVisible(false)} href={'#'}>Calçados</MenuItem>
-        <MenuItem onClick={() => setMenuMobileIsVisible(false)} href={'#'}>Decoração</MenuItem>
-        <MenuItem onClick={() => setMenuMobileIsVisible(false)} href={'#'}>Outlet</MenuItem>
+        <MenuItem onClick={() => {
+          setMenuMobileIsVisible(false);
+          goToAllProducts(navigate);
+        }} href={'#'}>Todas Categorias</MenuItem>
+        <MenuItem onClick={() => {
+          setMenuMobileIsVisible(false);
+          goToAllProducts(navigate);
+        }} href={'#'}>Feminino</MenuItem>
+        <MenuItem onClick={() => {
+          setMenuMobileIsVisible(false);
+          goToAllProducts(navigate);
+        }} href={'#'}>Masculino</MenuItem>
+        <MenuItem onClick={() => {
+          setMenuMobileIsVisible(false);
+          goToAllProducts(navigate);
+        }} href={'#'}>Infantil</MenuItem>
+        <MenuItem onClick={() => {
+          setMenuMobileIsVisible(false);
+          goToAllProducts(navigate);
+        }} href={'#'}>Acessórios</MenuItem>
+        <MenuItem onClick={() => {
+          setMenuMobileIsVisible(false);
+          goToAllProducts(navigate);
+        }} href={'#'}>Calçados</MenuItem>
+        <MenuItem onClick={() => {
+          setMenuMobileIsVisible(false);
+          goToAllProducts(navigate);
+        }} href={'#'}>Decoração</MenuItem>
+        <MenuItem onClick={() => {
+          setMenuMobileIsVisible(false);
+          goToAllProducts(navigate);
+        }} href={'#'}>Outlet</MenuItem>
       </Menu>
     </Container>
   );

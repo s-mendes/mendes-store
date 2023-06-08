@@ -17,6 +17,10 @@ export const Container = styled.section`
     ::-webkit-scrollbar {
         display: none;
     }
+    @media screen and (max-width:1050px){
+      margin: 30px 0 10px 0;
+      border-radius: 0;
+    }
   }
   &>div>div{
     display: flex;

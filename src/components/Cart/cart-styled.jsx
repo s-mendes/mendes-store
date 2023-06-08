@@ -15,6 +15,9 @@ export const Container = styled.section`
   }
   &>div{
     display: flex;
+    @media screen and (max-width: 800px) {
+      flex-direction: column;
+    }
   }
 `;
 
@@ -170,6 +173,9 @@ export const Frete = styled.section`
     align-items: center;
     justify-content: center;
     color: #cf2e2e
+  }
+  @media screen and (max-width: 800px) {
+    margin-right: 0;
   }
 `;
 
