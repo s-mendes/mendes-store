@@ -53,6 +53,9 @@ export const Filters = styled.aside`
     top:30%;
     right: 10px;
   }
+  @media screen and (max-width: 870px){
+    display: none;
+  }
 `;
 
 export const ProductsContainer = styled.section`
@@ -93,6 +96,28 @@ export const ProductList = styled.div`
   gap: 0px 20px;
   &>div{
     height: 350px;
+  }
+  @media screen and (min-width:616px) and (max-width: 870px){
+    gap: 0px 0px;
+    grid-auto-rows: 360px;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    & img {
+      width: 190px;
+    }
+    &>div{
+      transform: scale(0.9);
+    }
+  }
+  @media screen and (max-width: 615px){
+    gap: 0px 0px;
+    grid-auto-rows: 345px;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    &>div{
+      transform: scale(0.85);
+    }
+    & img {
+      width: 190px;
+    }
   }
 `;
 

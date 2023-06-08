@@ -1,12 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from '../components/Header/Header';
 import Carousel from '../components/Carousel/Carousel';
 import ProductList  from '../components/ProductList/ProductList';
 import FooterPage from '../components/Footer/FooterPage';
 import Banner from '../components/Banner/Banner';
 import Facilities from '../components/Facilities/Facilities';
+import { useLocation } from 'react-router-dom';
 
 function PaginaInicial() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth',
+    });
+  },[pathname]);
   return ( 
     <>
       <Header />

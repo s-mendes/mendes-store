@@ -19,6 +19,9 @@ export const BannerContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+  @media screen and (max-width: 600px){
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;
 
 export const Banners = styled.img`

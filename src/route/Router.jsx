@@ -9,6 +9,7 @@ import SignUpPage from '../pages/SignUpPage/SignUpPage';
 import AllProductsPage from '../pages/AllProductsPage';
 
 function Router() {
+
   return ( 
     <BrowserRouter>
       <Routes>

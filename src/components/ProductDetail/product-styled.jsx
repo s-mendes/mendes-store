@@ -11,19 +11,27 @@ export const MainContainer = styled.div`
     padding-left: 24px;
     padding-right: 24px;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 766px) {
     &>div{
-      padding-left: 0px;
-      padding-right: 0px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
   }
+  @media screen and (max-width: 1050px) {
+    &>div{
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+  
 `;
 
 export const ImageContainer = styled.div`
   max-width: 650px;
   max-height: 850px;
   padding-right: 15px;
-
+  width: 100%;
   &img{
     aspect-ratio: 1 / 1;
   }
@@ -81,7 +89,29 @@ export const ImageContainer = styled.div`
   .swiper-button-next {
   color: #757575;
   }
-
+  @media screen and (min-width: 916px) and (max-width: 1050px){
+    transform: scale(0.9);
+    max-width: 550px;
+    max-height: 650px;
+    .swiper-slide img{
+      max-height: 550px
+    }
+  }
+  @media screen and (min-width: 766px) and (max-width: 915px){
+    transform: scale(0.9);
+    max-width: 500px;
+    max-height: 450px;
+    .swiper-slide img{
+      max-height: 550px
+    }
+  }
+  
+  @media screen and (max-width: 765px) {
+    padding-right: 0px;
+    .swiper-slide img{
+      max-height: 450px
+    }
+  }
 `;
   
 export const DescriptionContainer = styled.div`
@@ -89,6 +119,14 @@ export const DescriptionContainer = styled.div`
   display: flex;
   gap: 20px;
   flex-direction: column;
+  /* transform: translateY(-100px) ; */
+  @media screen and (max-width: 915px){
+    /* transform: scale(0.8); */
+    /* width: 400px; */
+  }
+  @media screen and (max-width: 766px){
+    /* width: 100% */
+  }
 `;
 
 export const Icons = styled.div`
@@ -102,6 +140,12 @@ export const Icons = styled.div`
   &>svg{
     cursor: pointer;
   }
+  @media screen and (max-width: 766px){
+    position: relative;
+    top: 0;
+    right: 0;
+    
+  }
 `;
   
 export const Title = styled.div`
@@ -110,6 +154,9 @@ export const Title = styled.div`
   color: #3B3A38;
   line-height: 30px;
   margin-bottom: 32px;
+  @media screen and (max-width: 766px){
+    /* margin-top: 35px; */
+  }
 `;
 
 export const Price = styled.div`

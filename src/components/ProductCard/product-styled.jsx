@@ -35,7 +35,7 @@ export const CardContainer = styled.div`
 
     }
     &:hover {
-      height: 390px;
+      height: 385px;
     }
     &:hover{
       button{
